@@ -19,14 +19,19 @@ class AutenticacionControlador
             $usuario = $usuarioModelo->login($email, $password);
 
             if ($usuario) {
+                // Login exitoso
                 $_SESSION['usuario_id'] = $usuario['id'];
                 $_SESSION['usuario_nombre'] = $usuario['usuario'];
-                $_SESSION['usuario_email'] = $usuario['email'];
+                $_SESSION['rol'] = $usuario['rol'];
 
-                // Redirigir a donde estaba antes o a reservas
-                $redirect = $_SESSION['redirect_after_login'] ?? 'reservas.php';
-                unset($_SESSION['redirect_after_login']);
-                header('Location: ' . $redirect);
+                // Redirigir según si hay redirect
+                if (isset($_SESSION['redirect_after_login'])) {
+                    $redirect = $_SESSION['redirect_after_login'];
+                    unset($_SESSION['redirect_after_login']);
+                    header('Location: ' . $redirect);
+                } else {
+                    header('Location: index.php');
+                }
                 exit;
             } else {
                 $mensaje = 'Email o contraseña incorrectos';
@@ -66,7 +71,7 @@ class AutenticacionControlador
                     // Auto-login después del registro
                     $_SESSION['usuario_id'] = $usuario_id;
                     $_SESSION['usuario_nombre'] = $datos['usuario'];
-                    $_SESSION['usuario_email'] = $datos['email'];
+                    $_SESSION['rol'] = 'usuario'; // Por defecto es usuario
 
                     // Redirigir a donde estaba antes o a reservas
                     $redirect = $_SESSION['redirect_after_login'] ?? 'reservas.php';

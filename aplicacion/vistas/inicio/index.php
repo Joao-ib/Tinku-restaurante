@@ -8,44 +8,24 @@
         <img src="publico/imagenes/carrusel/imagen3.webp" alt="Experiencia Tinku">
     </div>
 
-    <section class="seccion-historia">
-        <div class="historia-container">
-            <div class="historia-texto">
-                <h2>Un encuentro de sabores ancestrales</h2>
-                <p>
-                    En Tinku celebramos la diversidad cultural del Perú a través de una experiencia 
-                    gastronómica única. Nuestro nombre, que significa "encuentro" en quechua, 
-                    representa la fusión de tradiciones culinarias de la costa, sierra y selva peruana.
-                </p>
-                <p>
-                    Cada plato cuenta una historia, cada ingrediente es un viaje a través de nuestros paisajes. 
-                    Trabajamos directamente con comunidades locales para traer a tu mesa lo más auténtico 
-                    de nuestra tierra, honrando las técnicas ancestrales.
-                </p>
-            </div>
-            <div class="historia-imagen">
-                <img src="publico/imagenes/historia/experiencia.jpg" alt="Experiencia gastronómica">
-            </div>
-        </div>
-    </section>
 
     <section class="seccion-productos">
         <div class="productos-container">
             <div class="productos-imagen">
-                <img src="publico/imagenes/inicio/productos.jpg" alt="Productos locales" 
-                     onerror="this.src='publico/imagenes/placeholder.jpg'">
+                <img src="publico/imagenes/inicio/productos.jpg" alt="Productos locales"
+                    onerror="this.src='publico/imagenes/placeholder.jpg'">
             </div>
             <div class="productos-texto">
                 <h2>Del campo a tu mesa</h2>
                 <p>
-                    Trabajamos directamente con más de 50 productores locales de todo el Perú. 
-                    Cada ingrediente es seleccionado cuidadosamente, respetando los ciclos naturales 
+                    Trabajamos directamente con más de 50 productores locales de todo el Perú.
+                    Cada ingrediente es seleccionado cuidadosamente, respetando los ciclos naturales
                     y las prácticas sostenibles de cultivo.
                 </p>
                 <p>
-                    Desde los valles de Cusco hasta las costas de Piura, nuestros proveedores 
-                    comparten nuestra pasión por la excelencia y el respeto por la tierra. 
-                    Esta conexión directa nos permite ofrecer productos de la más alta calidad, 
+                    Desde los valles de Cusco hasta las costas de Piura, nuestros proveedores
+                    comparten nuestra pasión por la excelencia y el respeto por la tierra.
+                    Esta conexión directa nos permite ofrecer productos de la más alta calidad,
                     frescos y llenos de sabor auténtico.
                 </p>
                 <div class="productos-stats">
@@ -71,14 +51,14 @@
             <div class="filosofia-texto">
                 <h2>Nuestra filosofía culinaria</h2>
                 <p>
-                    En Tinku, cada plato es una obra de arte que narra la historia del Perú. 
-                    Nuestro equipo de chefs, liderado por reconocidos maestros de la gastronomía 
+                    En Tinku, cada plato es una obra de arte que narra la historia del Perú.
+                    Nuestro equipo de chefs, liderado por reconocidos maestros de la gastronomía
                     peruana, fusiona técnicas contemporáneas con recetas ancestrales.
                 </p>
                 <p>
-                    La investigación constante y el respeto por nuestras raíces nos permiten 
-                    crear experiencias gastronómicas únicas. Cada temporada exploramos nuevos 
-                    ingredientes, redescubrimos sabores olvidados y celebramos la megadiversidad 
+                    La investigación constante y el respeto por nuestras raíces nos permiten
+                    crear experiencias gastronómicas únicas. Cada temporada exploramos nuevos
+                    ingredientes, redescubrimos sabores olvidados y celebramos la megadiversidad
                     de nuestro territorio.
                 </p>
                 <div class="filosofia-valores">
@@ -100,8 +80,8 @@
                 </div>
             </div>
             <div class="filosofia-imagen">
-                <img src="publico/imagenes/inicio/chef.jpg" alt="Chef en cocina" 
-                     onerror="this.src='publico/imagenes/placeholder.jpg'">
+                <img src="publico/imagenes/inicio/chef.jpg" alt="Chef en cocina"
+                    onerror="this.src='publico/imagenes/placeholder.jpg'">
             </div>
         </div>
     </section>
