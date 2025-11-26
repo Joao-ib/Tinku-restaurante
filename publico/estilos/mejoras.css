@@ -1,0 +1,302 @@
+/* ========== FONDOS DECORATIVOS ========== */
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    bottom: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(118, 75, 162, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========== SECCIÓN PRODUCTOS ========== */
+.seccion-productos {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0b0b0b 100%);
+    padding: 120px 50px;
+    position: relative;
+}
+
+.productos-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.productos-imagen {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.productos-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.productos-imagen:hover img {
+    transform: scale(1.05);
+}
+
+.productos-texto h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.productos-texto p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #c4c4c4;
+    font-family: 'Arial', sans-serif;
+}
+
+.productos-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stat {
+    text-align: center;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-5px);
+}
+
+.stat .numero {
+    display: block;
+    font-size: 42px;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.stat .label {
+    display: block;
+    font-size: 14px;
+    color: #c4c4c4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ========== SECCIÓN FILOSOFÍA ========== */
+.seccion-filosofia {
+    background: linear-gradient(180deg, #0b0b0b 0%, #1a1a1a 100%);
+    padding: 120px 50px;
+}
+
+.filosofia-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.filosofia-texto h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.filosofia-texto p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #c4c4c4;
+    font-family: 'Arial', sans-serif;
+}
+
+.filosofia-valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.valor {
+    text-align: center;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.valor:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-5px);
+}
+
+.valor .icono {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.valor h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.valor p {
+    font-size: 14px;
+    color: #c4c4c4;
+    line-height: 1.6;
+}
+
+.filosofia-imagen {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.filosofia-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.filosofia-imagen:hover img {
+    transform: scale(1.05);
+}
+
+/* ========== ARREGLO DE SELECTORES ========== */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    padding-right: 45px !important;
+}
+
+select option {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Mejorar simetría de formularios */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #e8e8e8;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgba(102, 126, 234, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+}
+
+/* Responsive para nuevas secciones */
+@media (max-width: 768px) {
+
+    .productos-container,
+    .filosofia-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .productos-imagen,
+    .filosofia-imagen {
+        height: 400px;
+        order: -1;
+    }
+
+    .productos-stats,
+    .filosofia-valores {
+        grid-template-columns: 1fr;
+    }
+
+    .productos-texto h2,
+    .filosofia-texto h2 {
+        font-size: 32px;
+    }
+}

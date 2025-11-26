@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +13,7 @@
     <link rel="stylesheet" href="publico/estilos/componentes.css">
     <link rel="stylesheet" href="publico/estilos/experiencias.css">
     <link rel="stylesheet" href="publico/estilos/pagos.css">
+    <link rel="stylesheet" href="publico/estilos/mejoras.css">
     <link rel="stylesheet" href="publico/estilos/responsivo.css">
 </head>
 
