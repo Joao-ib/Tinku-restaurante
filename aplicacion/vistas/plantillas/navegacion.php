@@ -12,7 +12,12 @@
             <a href="index.php">Inicio</a>
             <a href="reservas.php">Reservas</a>
             <a href="contacto.php">Contacto</a>
-            <a href="login.php">Iniciar Sesión</a>
+            <?php if (isset($_SESSION['usuario_id'])): ?>
+                <a href="#"><?php echo htmlspecialchars($_SESSION['usuario_nombre']); ?></a>
+                <a href="logout.php">Cerrar Sesión</a>
+            <?php else: ?>
+                <a href="login.php">Iniciar Sesión</a>
+            <?php endif; ?>
         </div>
     </nav>
 </header>
